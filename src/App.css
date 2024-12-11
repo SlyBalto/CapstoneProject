@@ -1,0 +1,358 @@
+body, label, input, p, select, input, option   {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: "Karla", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1, h2, h3{
+  font-family: "Markazi Text", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.reservation-background {
+  background-color:#495E57;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+}
+
+.reservation-form {
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+.center-items {
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-form label {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.form-row, .form-row-no-padding {
+  padding-bottom: 20px;
+  width: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row-no-padding {
+  padding-bottom: 0px;
+}
+
+.form-row-single {
+  padding-bottom: 20px;
+}
+
+.form-row-single label {
+  padding: 0px;
+}
+
+input {
+  height: 42px;
+  width: 100%;
+}
+
+select {
+  height: 42px;
+}
+
+input, select {
+  border-radius: 12px;
+  border-width: 0;
+  /* padding-inline: 10px; */
+  text-indent: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+.input-radio {
+  padding-inline: 0px;
+  background-color: aqua;
+  height: 30px;
+  width: 30px;
+}
+
+.width-limiter {
+  width: 100%; /* this will expand all content to fit horizontally, like grids, etc. */
+  max-width: 1000px; /*then this will limit the content after it's already set to be as wide as possible*/
+  padding: 0 50px;
+}
+
+.vertical-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.align-vertical-row {
+  display: "flex";
+  align-items: "center";
+}
+
+.image-rounded {
+  border-radius: 10px;
+}
+
+/* for when 2 or more elements need to be spread out as much as they can in one container */
+.spacer-spread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#hero-inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  #hero-inner-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+    #main-container, #booking-container {
+      padding-top: 50px;
+    }
+
+    #hero-img {
+      margin-top: 25px;
+    }
+}
+
+.header-content {
+  display: flex;
+  width: 100%;
+  align-items: center; /* content stays aligned vertically */
+  margin: 0 auto; /* centers header content within the header */
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header-mobile-container {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+}
+
+.nav-content {
+  width: 100%;
+  align-items: center; /* content stays aligned vertically */
+  margin: 0 auto; /* centers header content within the header */
+}
+
+/* this containers an offset so the menu doesn't cover up the X and hamburger menu logo */
+
+.nav-content-vertical {
+  width: 200px;
+  /* using max-width wasn't working, the list was stuck at around 200px */
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  top: 60px;
+  font-size: 20px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content ul, .nav-content-vertical ul {
+  list-style: none;  /* no bullet points */
+  align-items: center;
+}
+
+.nav-content ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.nav-content a, .nav-content-vertical a, .footer-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-content-vertical a {
+  line-height: 3;
+}
+
+.button-yellow, .button-black {
+border-radius: 6px;
+border-width: 0px;
+padding: 10px;
+text-decoration: none;
+}
+
+.button-yellow {
+background-color: #f4ce14;
+color: black;
+}
+
+.button-black {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  }
+
+.hero-title {
+color: yellow;
+}
+
+.hero-subtitle {
+  color: rgb(255, 255, 255);
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.special {
+  flex: 1;
+  background-color: #edefee;
+  border-radius: 10px;
+  text-align: center;
+  height: 475px;
+}
+
+.special-image {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.special-header {
+  /* both contents within this div are pushed to the left and right side ends */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    display: block;
+  }
+
+  .special-image {
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+  .special {
+    margin-bottom: 20px;
+    text-align: left;
+    height: 100%;
+  }
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+}
+
+.footer-container {
+  /* both contents within this div are pushed to the left and right side ends */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer-container ul {
+  list-style: none;  /* no bullet points */
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-container li {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+
+  .footer-container ul {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.special-price {
+ color: orange;
+}
+
+.vertical-stack {
+  margin: 10px 0;
+}
+
+.horizotal-stack {
+  display: flex;
+  align-items: center;
+}
+
+.inner-padding {
+  padding-left: 15px;
+  padding-right: 15px;
+}
